@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include <com_example_javacallcdemo_JNI.h>
+
+
+JNIEXPORT jint JNICALL Java_com_example_javacallcdemo_JNI_add
+  (JNIEnv * env, jobject jobj, jint jj, jint jj){
+
+}

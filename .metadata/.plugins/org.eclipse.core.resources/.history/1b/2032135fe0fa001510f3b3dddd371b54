@@ -1,0 +1,42 @@
+package com.example.jnidemo;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+
+	Button button;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        button=(Button)findViewById(R.id.btn);
+        
+        button.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				
+				javaCallC();
+			}
+		});
+    }
+    
+  //点击事件-调用C代码
+  	public void javaCallC(){
+  		System.loadLibrary("jniDemo");//加载动态链接库
+  		String result = sayHello();
+  		System.out.println("result=="+result);
+  		Toast.makeText(getApplicationContext(), "result=="+result, 1).show();
+  	}
+  	
+  //写一个native方法-调用C代码
+  	public native String sayHello();
+  	public native String say_133_Hello();
+}

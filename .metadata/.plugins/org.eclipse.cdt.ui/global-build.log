@@ -1,0 +1,75 @@
+
+**** Build of configuration Default for project CCallBackJava ****
+
+D:\android-ndk-r9-windows-x86_64\android-ndk-r9\ndk-build.cmd all 
+Android NDK: WARNING: APP_PLATFORM android-18 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+"Compile thumb : CCallBackJava <= CCallBackJava.c
+SharedLibrary  : libCCallBackJava.so
+Install        : libCCallBackJava.so => libs/armeabi/libCCallBackJava.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project CCallBackJava ****
+
+D:\android-ndk-r9-windows-x86_64\android-ndk-r9\ndk-build.cmd all 
+Android NDK: WARNING: APP_PLATFORM android-18 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+Install        : libCCallBackJava.so => libs/armeabi/libCCallBackJava.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project CCallBackJava ****
+
+D:\android-ndk-r9-windows-x86_64\android-ndk-r9\ndk-build.cmd all 
+Android NDK: WARNING: APP_PLATFORM android-18 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+"Compile thumb : CCallBackJava <= CCallBackJava.c
+SharedLibrary  : libCCallBackJava.so
+Install        : libCCallBackJava.so => libs/armeabi/libCCallBackJava.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project CCallBackJava ****
+
+D:\android-ndk-r9-windows-x86_64\android-ndk-r9\ndk-build.cmd all 
+Android NDK: WARNING: APP_PLATFORM android-18 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+"Compile thumb : CCallBackJava <= CCallBackJava.c
+SharedLibrary  : libCCallBackJava.so
+Install        : libCCallBackJava.so => libs/armeabi/libCCallBackJava.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MeiTuXiuXiuDemo ****
+
+D:\android-ndk-r9-windows-x86_64\android-ndk-r9\ndk-build.cmd all 
+Android NDK: WARNING: APP_PLATFORM android-18 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+D:/android-ndk-r9-windows-x86_64/android-ndk-r9/build/core/add-application.mk:176: *** Android NDK: Aborting...    .  Stop.
+Android NDK: Your APP_BUILD_SCRIPT points to an unknown file: ./jni/Android.mk    
+
+**** Build Finished ****
+
+**** Build of configuration Default for project 10.锅炉压力系统 ****
+
+D:\android-ndk-r9-windows-x86_64\android-ndk-r9\ndk-build.cmd all 
+Android NDK: WARNING: APP_PLATFORM android-14 is larger than android:minSdkVersion 9 in ./AndroidManifest.xml    
+"Compile thumb : ithiema50 <= ithiema50.c
+jni/ithiema50.c: In function 'Java_com_itheima_pressure_MainActivity_uninstalllistener':
+jni/ithiema50.c:56:5: warning: incompatible implicit declaration of built-in function 'execlp' [enabled by default]
+SharedLibrary  : libithiema50.so
+Install        : libithiema50.so => libs/armeabi/libithiema50.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project 10.锅炉压力系统 ****
+
+D:\android-ndk-r9-windows-x86_64\android-ndk-r9\ndk-build.cmd all 
+Android NDK: WARNING: APP_PLATFORM android-14 is larger than android:minSdkVersion 9 in ./AndroidManifest.xml    
+Install        : libithiema50.so => libs/armeabi/libithiema50.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project 10.锅炉压力系统 ****
+
+D:\android-ndk-r9-windows-x86_64\android-ndk-r9\ndk-build.cmd all 
+Android NDK: WARNING: APP_PLATFORM android-14 is larger than android:minSdkVersion 9 in ./AndroidManifest.xml    
+Install        : libithiema50.so => libs/armeabi/libithiema50.so
+
+**** Build Finished ****

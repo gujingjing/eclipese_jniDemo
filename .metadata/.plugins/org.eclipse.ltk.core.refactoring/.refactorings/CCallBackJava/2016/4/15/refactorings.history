@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CCallBackJava/jni/CCallBackJava.cpp&apos; to &apos;CCallBackJava.c&apos;" description="Rename resource &apos;CCallBackJava.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="jni/CCallBackJava.cpp" name="CCallBackJava.c" stamp="1459839635711" updateReferences="true"/>
+</session>

@@ -1,0 +1,9 @@
+
+**** Build of configuration Default for project MeiTuXiuXiuDemo ****
+
+D:\android-ndk-r9-windows-x86_64\android-ndk-r9\ndk-build.cmd all 
+Android NDK: WARNING: APP_PLATFORM android-18 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+D:/android-ndk-r9-windows-x86_64/android-ndk-r9/build/core/add-application.mk:176: *** Android NDK: Aborting...    .  Stop.
+Android NDK: Your APP_BUILD_SCRIPT points to an unknown file: ./jni/Android.mk    
+
+**** Build Finished ****

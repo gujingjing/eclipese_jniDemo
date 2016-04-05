@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include <com_example_javacallcdemo_JNI.h>
+
+
+JNIEXPORT jint JNICALL Java_com_example_javacallcdemo_JNI_add
+  (JNIEnv *env, jobject jobj , jint jx, jint jy){
+
+}
+
+
+JNIEXPORT jstring JNICALL Java_com_example_javacallcdemo_JNI_sayHelloInC
+  (JNIEnv * env, jobject jobj, jstring js){
+
+}
+
+JNIEXPORT jintArray JNICALL Java_com_example_javacallcdemo_JNI_arrElementsIncrease
+  (JNIEnv * env, jobject jobj, jintArray jarray){
+
+}

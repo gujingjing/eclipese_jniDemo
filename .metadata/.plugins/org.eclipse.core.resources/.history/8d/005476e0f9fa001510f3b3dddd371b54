@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include <com_example_javacallcdemo_JNI.h>
+
+#include <android/log.h>
+#define LOG_TAG "yangguangfu"
+#define LOGD(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
+#define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
+
+JNIEXPORT jint JNICALL Java_com_example_javacallcdemo_JNI_add
+  (JNIEnv *env, jobject jobj , jint jx, jint jy){
+
+
+}
+
+
+JNIEXPORT jstring JNICALL Java_com_example_javacallcdemo_JNI_sayHelloInC
+  (JNIEnv * env, jobject jobj, jstring js){
+
+}
+
+JNIEXPORT jintArray JNICALL Java_com_example_javacallcdemo_JNI_arrElementsIncrease
+  (JNIEnv * env, jobject jobj, jintArray jarray){
+
+}

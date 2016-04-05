@@ -1,0 +1,8 @@
+
+**** Build of configuration Default for project 10.¹øÂ¯Ñ¹Á¦ÏµÍ³ ****
+
+D:\android-ndk-r9-windows-x86_64\android-ndk-r9\ndk-build.cmd all 
+Android NDK: WARNING: APP_PLATFORM android-14 is larger than android:minSdkVersion 9 in ./AndroidManifest.xml    
+Install        : libithiema50.so => libs/armeabi/libithiema50.so
+
+**** Build Finished ****

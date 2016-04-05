@@ -1,0 +1,11 @@
+
+**** Build of configuration Default for project javaCallCDemo ****
+
+D:\android-ndk-r9-windows-x86_64\android-ndk-r9\ndk-build.cmd all 
+Android NDK: WARNING: APP_PLATFORM android-18 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+Install        : libjavaCallCDemo.so => libs/armeabi-v7a/libjavaCallCDemo.so
+Install        : libjavaCallCDemo.so => libs/armeabi/libjavaCallCDemo.so
+Install        : libjavaCallCDemo.so => libs/x86/libjavaCallCDemo.so
+Install        : libjavaCallCDemo.so => libs/mips/libjavaCallCDemo.so
+
+**** Build Finished ****

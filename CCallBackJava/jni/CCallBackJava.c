@@ -1,0 +1,120 @@
+#include <com_example_ccallbackjava_JNI.h>
+#include<stdio.h>
+#include<stdlib.h>
+
+/**
+ * 让C代码调用Java代码JNI中的helloFromJava()
+ */
+JNIEXPORT void JNICALL Java_com_example_ccallbackjava_JNI_callBackJava_1helloFromJava
+(JNIEnv * env, jobject jobj) {
+
+	//用反射
+	//1.得到字节码
+	//jclass      (*FindClass)(JNIEnv*, const char*);
+	//要实例化的类的全类名,要把.改成/    com.example.ccallbackjava.JNI
+	jclass jclazz = (*env)->FindClass(env,"com/example/ccallbackjava/JNI");
+
+	//2.得到对应的方法
+	// jmethodID   (*GetMethodID)(JNIEnv*, jclass, const char*, const char*);
+	//倒数第二个参数：方法名
+	//最后一个参数：方法签名
+	jmethodID jmethodIDs = (*env)->GetMethodID(env,jclazz,"helloFromJava","()V");
+
+	//3.得到实例
+	//jobject     (*AllocObject)(JNIEnv*, jclass);
+	jobject jobject= (*env)->AllocObject(env,jclazz);
+
+	//4.执行
+	//  void        (*CallVoidMethod)(JNIEnv*, jobject, jmethodID, ...);
+	(*env)->CallVoidMethod(env,jobject,jmethodIDs);// 成功调用了Java中JNI的helloFromJava()；
+
+}
+
+
+/**
+ *  让C代码调用Java代码JNI中的add(int x,int y)
+ */
+JNIEXPORT void JNICALL Java_com_example_ccallbackjava_JNI_callBackJava_1add
+  (JNIEnv * env, jobject jobj){
+
+
+	//用反射
+	//1.得到字节码
+	//jclass      (*FindClass)(JNIEnv*, const char*);
+	//要实例化的类的全类名,要把.改成/
+	jclass jclazz = (*env)->FindClass(env,"com/example/ccallbackjava/JNI");
+
+	//2.得到对应的方法
+	// jmethodID   (*GetMethodID)(JNIEnv*, jclass, const char*, const char*);
+	//倒数第二个参数：方法名
+	//最后一个参数：方法签名
+	jmethodID jmethodIDs = (*env)->GetMethodID(env,jclazz,"add","(II)I");
+
+	//3.得到实例
+	//jobject     (*AllocObject)(JNIEnv*, jclass);
+	jobject jobject= (*env)->AllocObject(env,jclazz);
+
+	//4.执行
+	//   jint        (*CallIntMethod)(JNIEnv*, jobject, jmethodID, ...);
+	(*env)->CallIntMethod(env,jobject,jmethodIDs,99,1);//成功调用了Java中JNI类中的add(int x,int y)
+
+
+
+}
+
+/**
+ * 让C代码调用Java代码JNI中的printString(String s)
+ */
+JNIEXPORT void JNICALL Java_com_example_ccallbackjava_JNI_callBackJava_1printString
+  (JNIEnv * env, jobject jobj){
+
+	//用反射
+	//1.得到字节码
+	//jclass      (*FindClass)(JNIEnv*, const char*);
+	//要实例化的类的全类名,要把.改成/
+	jclass jclazz = (*env)->FindClass(env,"com/example/ccallbackjava/JNI");
+
+	//2.得到对应的方法
+	// jmethodID   (*GetMethodID)(JNIEnv*, jclass, const char*, const char*);
+	//倒数第二个参数：方法名
+	//最后一个参数：方法签名
+	jmethodID jmethodIDs = (*env)->GetMethodID(env,jclazz,"printString","(Ljava/lang/String;)V");
+
+	//3.得到实例
+	//jobject     (*AllocObject)(JNIEnv*, jclass);
+	jobject jobject= (*env)->AllocObject(env,jclazz);
+
+	//4.执行
+	//    void        (*CallVoidMethod)(JNIEnv*, jobject, jmethodID, ...);
+	//char* ---》jstring
+	//jstring     (*NewStringUTF)(JNIEnv*, const char*);
+	char* text = "I am from C for afu";
+	jstring jstr= (*env)->NewStringUTF(env,text);
+	(*env)->CallVoidMethod(env,jobject,jmethodIDs,jstr);//成功调用了Java中JNI类中的printString(String s)
+}
+
+/**
+ *  让C代码调用Java代码JNI中的静态方法hello()
+ */
+JNIEXPORT void JNICALL Java_com_example_ccallbackjava_JNI_callBackJava_1hello
+  (JNIEnv * env, jobject jobj){
+
+
+	//用反射
+	//1.得到字节码
+	//jclass      (*FindClass)(JNIEnv*, const char*);
+	//要实例化的类的全类名,要把.改成/
+	jclass jclazz = (*env)->FindClass(env,"com/example/ccallbackjava/JNI");
+
+	//2.得到对应的方法
+	// jmethodID   (*GetStaticMethodID)(JNIEnv*, jclass, const char*, const char*);
+	//倒数第二个参数：方法名
+	//最后一个参数：方法签名
+	jmethodID jmethodIDs = (*env)->GetStaticMethodID(env,jclazz,"hello","()V");
+
+	//3.执行
+	//   void        (*CallStaticVoidMethod)(JNIEnv*, jclass, jmethodID, ...);
+	(*env)->CallStaticVoidMethod(env,jclazz,jmethodIDs);//成功调用了Java中JNI类中的hello()
+
+
+}

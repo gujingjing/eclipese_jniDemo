@@ -1,0 +1,7 @@
+
+**** Build of configuration Default for project jniFastDemo ****
+
+D:\android-ndk-r9-windows-x86_64\android-ndk-r9\ndk-build.cmd all 
+Install        : libjniFastDemo.so => libs/armeabi/libjniFastDemo.so
+
+**** Build Finished ****

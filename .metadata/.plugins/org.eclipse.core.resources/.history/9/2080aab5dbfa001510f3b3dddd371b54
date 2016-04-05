@@ -1,0 +1,7 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<jni.h>
+
+jstring com_example_jnidemo_MainActivity_say_1_333_1_11_44_1Hello(){
+
+}
